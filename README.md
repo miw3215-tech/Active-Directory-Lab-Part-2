@@ -1,10 +1,14 @@
 # Active-Directory-Lab-Part-2
 
 #Overview#  This project is a continuation of my Active Directory lab, focusing on integrating a client machine into a domain environment. In this phase, I configured a Windows client, joined it to the labs.local domain, and verified domain connectivity and authentication.
+
 Tools used: VirtualBox, Windows 10 Pro, Windows Server 2022
 
 
-First, I installed Windows 10 Pro as the client operating system within VirtualBox and ensured it was configured on the same network adapter as the domain controller to maintain proper connectivity and a secure communication environment
+The following sections outline my process for joining a client machine to the domain and verifying authentication and DNS functionality.
+
+First, I installed Windows 10 Pro as the client operating system within VirtualBox and ensured it was configured on the same network adapter as the domain controller to maintain proper connectivity and a secure communication environment.
+
 Once Windows is done installing I made sure to add my Client windows vm as a local account  do to its main function being a client of the domain <img width="1366" height="691" alt="github part 2 1" src="https://github.com/user-attachments/assets/fc705084-dc02-418c-9b98-5622f231a3ee" />
 Afterward, I configured the client with an IP address within the same network as the domain controller and assigned it the same DNS server. This ensured proper connectivity, allowed for accurate name resolution, and enabled the client to successfully locate and join the domain <img width="1366" height="691" alt="github part 2 2" src="https://github.com/user-attachments/assets/37d41d54-0c5f-4de1-a3ae-9e6fac7eebe1" />
 Once the client was configured on the same network, I navigated to Control Panel > System > Rename this PC (Advanced) to access system properties. From there, I initiated the domain join process. On a client or end-user device, administrative credentials are required to complete this action.  This can be accessed more quick by running the "sysdm.cpl" command in the windows seatch tab.  <img width="1366" height="691" alt="github part 2 3" src="https://github.com/user-attachments/assets/c41ec041-b999-4fbf-9ebe-2d9e6c1f00d5" />
